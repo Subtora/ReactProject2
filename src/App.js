@@ -1,6 +1,6 @@
 import React from "react";
-import ReactDOM from "react-dom";
-import Pet from "Pet";
+import { render } from "react-dom";
+import Pet from "./Pet";
 
 class App extends React.Component {
   handleTitleClick() {
@@ -17,5 +17,4 @@ class App extends React.Component {
     );
   }
 }
-
 render(<App />, document.getElementById("root"));
