@@ -6,7 +6,7 @@
   "scripts": {
     "format": "prettier --write \"src/**/*.{js,jsx,json}\"",
     "format:check": "prettier --list-different \"src/**/*.{js,jsx,json}\"",
-    "lint": "eslint **\"**/*.{js,jsx}\"",
+    "lint": "eslint \"src/**/*.{js,jsx}\"",
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "parcel src/index.html"
   },
@@ -19,7 +19,11 @@
     "eslint": "^5.12.0",
     "eslint-config-prettier": "^3.3.0",
     "eslint-plugin-prettier": "^3.0.1",
+    "eslint-plugin-react": "^7.12.3",
     "parcel-bundler": "^1.11.0",
     "prettier": "^1.15.3"
+  },
+  "dependencies": {
+    "babel-loader": "^8.0.5"
   }
 }
