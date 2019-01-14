@@ -1,34 +1,39 @@
 {
-  "extends": [
-    "eslint:recommended",
-    "plugin:import/errors",
-    "plugin:react/recommended",
-    "plugin:jsx-a11y/recommended",
-    "prettier",
-    "prettier/react"
-  ],
-  "rules": {
-    "react/prop-types": 0
-  },
-  "plugins":[
-    "react"
-    "import"
-    "jsx-a11y"
-  ],
   "parserOptions": {
-    "ecmaVersion": 2018,
+    "ecmaVersion": 6,
     "sourceType": "module",
+    "ecmaVersion": 2017,
     "ecmaFeatures": {
       "jsx": true
     }
   },
+  "parser": "babel-eslint",
+  "plugins": [
+    "react",
+    "import"
+  ],
   "env": {
-    "es6": true,
     "browser": true,
-    "node": true
+    "node": true,
+    "es6": true
   },
-  "globals": {
-    "React": true,
-    "ReactDOM": true
+  "rules": {
+    "no-undef": "error",
+    "no-console": "off",
+    "eqeqeq": ["error", "smart"],
+    "space-before-blocks": "error",
+    "react/prop-types": "off",
+    "no-var": "error",
+    "no-const-assign": "error",
+    "no-use-before-define": ["error", { "functions": false }],
+    "no-unused-vars": "error",
+    "semi": "error",
+    "comma-dangle": ["error", "always-multiline"],
+    "react/jsx-uses-react": "error",
+    "react/jsx-uses-vars": "error",
+    "react/jsx-no-undef": "error",
+    "import/no-unresolved": 2,
+    "object-curly-spacing": ["error", "always"]
   }
+
 }
